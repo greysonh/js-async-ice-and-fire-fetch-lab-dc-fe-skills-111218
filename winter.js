@@ -1,9 +1,8 @@
 function fetchBooks() {
   //write fetch request to the Game of Thrones API
-var json = fetch("http://api.open-notify.org/astros.json")
+fetch("http://api.open-notify.org/astros.json")
 .then(response => response.json())
 .then(json => console.log(json));
-return json;
 }
 
 function renderBooks(json) {
